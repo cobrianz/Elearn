@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima Nova:400,800");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    appearance: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    background: hsla(0, 0%, 100%, 1);
+
+background: linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, hsla(233, 70%, 70%, 1) 100%, hsla(246, 66%, 88%, 1) 100%);
+
+background: -moz-linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, rgb(183, 191, 248) 100%, hsla(246, 66%, 88%, 1) 100%);
+
+background: -webkit-linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, rgb(165, 175, 245) 100%, hsla(246, 66%, 88%, 1) 100%);
+
+
+}
+
+.loading {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.loading h1 {
+    font-size: 6rem;
+    background: #8c7dee;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.loading span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.loading small {
+    font-size: 1.5rem;
+    
+}
+
+.loading .loader {
+    position: absolute;
+    bottom: 5rem;
+    animation: spin 1s linear infinite;
+    color: #8c7dee;
+}
+
+.loading .tick {
+    background: #8c7dee;
+    border-radius: 50%;
+    padding: 4px;
+    color: #fff;
+    position: absolute;
+    bottom: 5rem;
+    display: none;
+    transition: all 300ms ease;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .hero {
+    width: 100%;
+    min-height: 80vh;
+    background: rgb(245,236,253);
+    
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 8px 12px rgba( 0, 0, 0, 0.04 );
+  }
+  .navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    justify-content: space-between;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .logo h1 span{
+    font-size: 3rem;
+    color: #8c7dee;
+  }
+
+  .user a {
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 400ms ease-in-out;
+
+  }
+
+  .user a:hover {
+    opacity: .5;
+  }
+
+  .user a:focus {
+    transition: transform 0.3s;
+    transform: scale(0.7);
+  }
+  .user .left{
+    border: 1px solid #8c7dee;
+    color: #8c7dee;
+    margin-right: 0.4rem;
+  }
+
+  .user .right {
+    background: #8c7dee;
+    color: #fff;
+  }
+
+  .hero__home {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__home h2 {
+    font-size: 4rem;
+    margin-bottom: 8x;
+  }
+
+  .hero__home small {
+    font-size: 1rem;
+    color: #5c5b5b;
+    margin-bottom: 2rem;
+  }
+
+  .hero__btn a{
+    padding:0.8rem 2rem;
+  }
+
+  .categories {
+    padding: 3rem 4rem; 
+    background: linear-gradient(90deg, #8c7dee, #a3a3eb);
+  }
+
+
+  .title{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    top: .2rem;
+  }
+
+  .dark {
+    color: #000;
+  }
+
+  .courses{
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .course {
+    width: 300px;
+    height: 200px;
+    padding: 2rem;
+    display: flex;
+    gap: .4rem;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.course:hover {
+      transition: all 300ms ease;
+      background: rgba( 255, 255, 255, 0.3 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 0.5px );
+      -webkit-backdrop-filter: blur( 0.5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  .course h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .course p {
+    color: #414040;
+    font-size: 1.2rem;
+  }
+  .course img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
