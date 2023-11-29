@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    appearance: unset;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: hsla(0, 0%, 100%, 1);
+
+    background: linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, hsla(233, 70%, 70%, 1) 100%, hsla(246, 66%, 88%, 1) 100%);
+    
+    background: -moz-linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, rgb(183, 191, 248) 100%, hsla(246, 66%, 88%, 1) 100%);
+    
+    background: -webkit-linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, rgb(165, 175, 245) 100%, hsla(246, 66%, 88%, 1) 100%);
+    
+    
+
+}
+
+
+.main aside {
+    width: 15%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background: #fff;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 2px 8px rgba(0, 0,0, 0.2); 
+    margin-left: 3rem;
+
+    
+}
+
+.main aside .aside__logo {
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+.main aside .aside__logo h1 {
+    font-size: 3rem;
+    background: #6a5acd;
+    width: fit-content;
+    margin: auto;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.main aside .aside__logo h3 {
+    font-size: 2rem;
+    padding: .4rem;
+}
+
+.main aside .aside__logo p {
+    color: #6b6b6b;
+}
+
+.main aside a{
+    width: 90%;
+    margin: .2rem 0;
+    box-shadow: 0px 2px 8px rgba(0, 0,0, 0.2); 
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    color: #5e5b5b;
+    font-weight: bold;
+}
+
+.main aside a:hover {
+    background-color: #e0dcf7;
+    transition: all 200ms linear;
+}
+
+.main aside a span {
+    margin-right: 1rem;
+    color: #888585;
+}
+
+main {
+    flex: 2;
+}
+
+.active {
+    color: #6a5acd;
+}
+
+.active .aside__item {
+    background: #a79deb;
+}
